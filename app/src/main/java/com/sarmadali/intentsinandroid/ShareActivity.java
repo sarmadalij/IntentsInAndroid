@@ -38,9 +38,6 @@ public class ShareActivity extends AppCompatActivity {
 
             startActivity(sendTxt);
 
-
-
-
         });
     }
 }
