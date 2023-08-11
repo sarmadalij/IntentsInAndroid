@@ -2,7 +2,7 @@ package com.sarmadali.intentsinandroid;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +16,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+         //transparent status bar
+        getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN
+        );
 
         //for explicit intent
         TextExplt = findViewById(R.id.explicitText);
@@ -34,14 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
         TextImplicit = findViewById(R.id.implicitText);
 
-        TextImplicit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ShareActivity.class);
-                startActivity(intent);
+        TextImplicit.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ShareActivity.class);
+            startActivity(intent);
 
 //                finish();
-            }
         });
     }
 }
