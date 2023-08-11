@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     tools:context=".ShareActivity">
 
@@ -60,13 +61,17 @@
             tools:ignore="VisualLintLongText" />
 
         <android.widget.Button
-            android:id="@+id/button"
+            android:id="@+id/sharebtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ED2D8115"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sharebtnbg"
             android:drawableEnd="@drawable/sharee"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
             android:text="@string/share_quote"
-            android:textColor="#FFFFFF"
-            tools:ignore="VisualLintButtonSize" />
+            android:textColor="#020202"
+            android:textSize="24sp"
+            tools:ignore="RtlHardcoded,VisualLintButtonSize" />
     </LinearLayout>
 </LinearLayout>

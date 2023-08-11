@@ -7,4 +7,5 @@
     <string name="life_changing_quote">Life Changing Quote</string>
     <string name="quote">“Never be afraid to raise your voice for honesty and truth and compassion against injustice and lying and greed. If people all over the world...would do this, it would change the earth.”</string>
     <string name="share_quote">SHARE QUOTE</string>
+    <string name="implicit_intent">Implicit Intent</string>
 </resources>
